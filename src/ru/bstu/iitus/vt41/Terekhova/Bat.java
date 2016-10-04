@@ -9,31 +9,19 @@ public class Bat extends SportsEquipment {
     double length;    //длина
 
     @Override
-    public void init(Scanner scan) {
+    public void init(Scanner scan) throws MyException {
 
         System.out.println("Введите массу инвентаря: ");
-        if (scan.hasNextDouble()) {
-            weight = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
+        weight = InizialEquipment.TypeVerification(scan);
 
         System.out.println("Введите производителя инвентаря: ");
         manufacturer = scan.nextLine();
 
         System.out.println("Введите размер обода: ");
-        if (scan.hasNextDouble()) {
-            sizeRim = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
+        sizeRim = InizialEquipment.TypeVerification(scan);
 
         System.out.println("Введите длину ракетки: ");
-        if (scan.hasNextDouble()) {
-            length = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
+        length = InizialEquipment.TypeVerification(scan);
     }
 
     @Override

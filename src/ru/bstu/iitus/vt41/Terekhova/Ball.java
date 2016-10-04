@@ -10,22 +10,16 @@ public class Ball extends SportsEquipment {
 
     @Override
     public void init(Scanner scan) throws MyException {
+
         System.out.println("Введите массу мяча: ");
-        if (scan.hasNextDouble()) {
-            weight =Double.parseDouble( scan.nextLine());
-        } else {
-            throw new MyException("Введите числовое значение!");
-        }
+        weight = InizialEquipment.TypeVerification(scan);
 
         System.out.println("Введите производителя мяча: ");
         manufacturer = scan.nextLine();
 
         System.out.println("Введите радиус мяча: ");
-        if (scan.hasNextDouble()) {
-            size =Double.parseDouble( scan.nextLine());
-        } else {
-            throw new MyException("Введите числовое значение!");
-        }
+        size = InizialEquipment.TypeVerification(scan);
+
         System.out.println("Введите материал, из которого изготовлен мяч: ");
         material = scan.nextLine();
     }

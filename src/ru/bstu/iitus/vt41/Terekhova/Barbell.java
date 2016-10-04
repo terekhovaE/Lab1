@@ -8,15 +8,10 @@ public class Barbell extends Fitness {
     double length;    //длина
 
     @Override
-    public void init(Scanner scan) {
+    public void init(Scanner scan) throws MyException {
         super.init(scan);
-
         System.out.println("Введите длину штанги: ");
-        if (scan.hasNextDouble()) {
-            length = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
+        length = InizialEquipment.TypeVerification(scan);
     }
 
     @Override

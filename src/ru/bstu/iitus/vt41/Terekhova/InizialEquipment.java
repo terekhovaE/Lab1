@@ -15,19 +15,28 @@ public class InizialEquipment {
         return a;
     }
 
+    public static double TypeVerification(Scanner scan) throws MyException {
+        if (!scan.hasNextDouble()) {
+            throw new MyException("Введите числовое значение!");
+        } else {
+            return Double.parseDouble( scan.nextLine());
+        }
+    }
+
     public static void CreateArray() throws InstantiationException, IllegalAccessException {
 
         System.out.println("Введите количество инвентаря: ");
         int quantity = Integer.parseInt(scan.nextLine());
         arrayEq = new SportsEquipment[quantity];
-        for (int i = 0; i < quantity;)
+        for (int i = 0; i < quantity;) {
             try {
-                arrayEq[i]= buildEquipments(Inizial());
+                arrayEq[i] = buildEquipments(Inizial());
                 arrayEq[i].init(scan);
                 i++;
             } catch (MyException ex) {
-               System.out.println(ex.getMessage());
+                System.out.println(ex.getMessage());
             }
+        }
     }
 
     private static SportsEquipment buildEquipments(int typeEquipment) throws IllegalAccessException, InstantiationException {

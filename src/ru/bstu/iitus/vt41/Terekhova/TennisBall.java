@@ -9,15 +9,8 @@ public class TennisBall extends Ball {
     @Override
     public void init(Scanner scan) throws MyException {
         super.init(scan);
-
         System.out.println("Введите уровень упругости мяча: ");
-
-
-        if (scan.hasNextDouble()) {
-            levelElasticity =Double.parseDouble( scan.nextLine());
-        } else {
-           throw new MyException("Введите числовое значение!");
-        }
+        levelElasticity = InizialEquipment.TypeVerification(scan);
     }
 
     @Override

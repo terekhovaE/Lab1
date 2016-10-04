@@ -9,31 +9,18 @@ public class Javelin extends SportsEquipment {
     double length;    //длина
 
     @Override
-    public void init(Scanner scan) {
+    public void init(Scanner scan) throws MyException{
         System.out.println("Введите массу инвентаря: ");
-        if (scan.hasNextDouble()) {
-            weight = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
+        weight = InizialEquipment.TypeVerification(scan);
 
         System.out.println("Введите производителя инвентаря: ");
         manufacturer = scan.nextLine();
 
         System.out.println("Введите угол острия: ");
-        if (scan.hasNextDouble()) {
-            angleTip = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
+        angleTip = InizialEquipment.TypeVerification(scan);
 
         System.out.println("Введите длину копья: ");
-        if (scan.hasNextDouble()) {
-            length = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
-
+        length = InizialEquipment.TypeVerification(scan);
     }
 
     @Override

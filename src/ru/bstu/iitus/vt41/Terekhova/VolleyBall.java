@@ -8,17 +8,10 @@ public class VolleyBall extends Ball {
     String typePump;    //тип насоса
 
     @Override
-    public void init(Scanner scan) {
-        try {
-            super.init(scan);
-        }
-        catch (MyException ex) {
-
-        }
-
+    public void init(Scanner scan) throws MyException {
+        super.init(scan);
         System.out.println("Введите тип насоса: ");
         typePump = scan.nextLine();
-
     }
 
     @Override

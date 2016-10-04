@@ -10,14 +10,10 @@ public class Fitness extends SportsEquipment {
     String color;   //цвет
 
     @Override
-    public void init(Scanner scan) {
+    public void init(Scanner scan) throws MyException {
 
         System.out.println("Введите массу инвентаря: ");
-        if (scan.hasNextDouble()) {
-            weight = scan.nextDouble();
-        } else {
-            //ругнуться
-        }
+        weight = InizialEquipment.TypeVerification(scan);
 
         System.out.println("Введите производителя инвентаря: ");
         manufacturer = scan.nextLine();
