@@ -1,0 +1,49 @@
+{
+  "result":true
+,"data":[
+  {
+    "type":{
+      "value":"волейбол"
+    },
+    "pump":"ASD",
+    "size":"5.0",
+    "material":"резина",
+    "weight":"3.4",
+    "manufacturer":"Россия",
+
+    "type":{
+      "value":"теннис"
+    },
+    "levelElasticity":"7.1",
+    "size":"8.0",
+    "material":"резина",
+    "weight":"3.4",
+    "manufacturer":"США",
+
+    "type":{
+      "value":"ракетка"
+    },
+    "levelConvenience":"5.0",
+    "material":"кирпич",
+    "weight":"3.4",
+    "manufacturer":"hgfhgh",
+    "sizeRim": "5",
+    "length": "10",
+
+    "type":{
+      "value":"копье"
+    },
+    "angleTip":"5.0",
+    "length":"15.0",
+    "weight":"34",
+    "manufacturer":"hgfhgh",
+
+    "type":{
+      "value":"копье"
+    },
+    "angleTip":"5.0",
+    "length":"150.0",
+    "weight":"3.4",
+    "manufacturer":"hgfhgh"}
+]
+}

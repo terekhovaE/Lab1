@@ -1,0 +1,4 @@
+теннис{"levelElasticity":7.1,"size":5.0,"material":"резина","weight":3.4,"manufacturer":"США","type":"TENNIS"}
+теннис{"sizeRim":5.0,"length":10.0,"weight":3.4,"manufacturer":"hgfhgh","type":"TENNIS"}
+копье{"angleTip":5.0,"length":15.0,"weight":3.4,"manufacturer":"hgfhgh","type":"JAVELIN_THROWING"}
+копье{"angleTip":5.0,"length":15.0,"weight":3.4,"manufacturer":"hgfhgh","type":"JAVELIN_THROWING"}
